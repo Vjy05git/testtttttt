@@ -4,4 +4,4 @@ services:
     image: proj
     ports:
       - "3000:80"
-    container_name: Vjy
+    container_name: app
