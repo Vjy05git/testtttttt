@@ -23,8 +23,10 @@ pipeline {
                 script {
                     def branchName = env.BRANCH_NAME
                     if (branchName == 'prod') {
+                        sh "chmod +x build.sh"
                         sh 'sudo ./build.sh'
                        } else if (branchName == 'dev') {
+                        sh "chmod +x build.sh"
                         sh 'sudo ./build.sh'
                         }
                   else {
