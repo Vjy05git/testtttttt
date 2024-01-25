@@ -23,9 +23,9 @@ pipeline {
                 script {
                     def branchName = env.BRANCH_NAME
                     if (branchName == 'prod') {
-                        sh './build.sh'
+                        sh 'sudo ./build.sh'
                        } else if (branchName == 'dev') {
-                        sh './build.sh'
+                        sh 'sudo ./build.sh'
                         }
                   else {
                         echo 'failed'
@@ -53,7 +53,7 @@ stage('deploy') {
             steps {
                 script {
                       sh 'docker rm -f app'   
-                      sh './deploy.sh'
+                      sh 'sudo ./deploy.sh'
                     }
                 }
             }    
