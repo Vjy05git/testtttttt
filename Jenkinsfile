@@ -1,10 +1,7 @@
 pipeline {
     agent any
-    
-
-    stages {
-
-        stage('Docker Hub Login') {
+     stages {
+        stage('zxcvzdf') {
             steps {
                 script {
                          checkout scmGit(branches: [[name: '*/dev'], [name: '*/prod']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Vjy05git/testtttttt.git']])
