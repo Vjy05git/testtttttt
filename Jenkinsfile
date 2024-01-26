@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+                node {
+                    
+                    label 'node'
+                }
      stages {
         stage('zxcvzdf') {
             steps {
@@ -59,5 +63,6 @@ stage('deploy') {
                     }
                 }
             }    
+}
 }
 }
