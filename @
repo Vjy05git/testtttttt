@@ -1,6 +1,0 @@
-# /bin/bash
-
-
-sudo docker-compose up -d
-
-if sudo docker ps | grep -q $; then
