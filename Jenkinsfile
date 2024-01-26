@@ -5,7 +5,7 @@ pipeline {
                     label 'node'
                 }
      stages {
-        stage('zxcvzdf') {
+        stage('CheckoutGit') {
             steps {
                 script {
                          checkout scmGit(branches: [[name: '*/dev'], [name: '*/prod']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Vjy05git/testtttttt.git']])
